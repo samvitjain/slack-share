@@ -1,0 +1,26 @@
+name: 'Slack Share'
+description: 'Greet someone and record the time'
+inputs:
+  SLACK_TOKEN:  # id of input
+    description: 'Slack Token'
+    required: true
+    default: 'No token'
+  SHARE_FILE:  # id of input
+    description: 'Share file boolean'
+    required: true
+    default: false
+  SLACK_CHANNEL:  # id of input
+    description: 'Slack channel'
+    required: true
+    default: 'random'
+  FILE_PATH:  # id of input
+    description: 'File path'
+    required: false
+    default: ''
+  SLACK_MESSAGE:  # id of input
+    description: 'Slack message'
+    required: false
+    default: ''
+runs:
+  using: 'node12'
+  main: 'index.js'
