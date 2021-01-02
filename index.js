@@ -9,7 +9,6 @@ try {
     const SLACK_CHANNEL = core.getInput('SLACK_CHANNEL');
     const FILE_PATH = core.getInput('FILE_PATH');
     const SLACK_MESSAGE = core.getInput('SLACK_MESSAGE');
-    const SEND_COMMIT_MESSAGE = core.getInput('SEND_COMMIT_MESSAGE');
 
     const web = new WebClient(SLACK_TOKEN);
 var slackMessage=SLACK_MESSAGE;
