@@ -9,18 +9,14 @@ try {
     const SLACK_CHANNEL = core.getInput('SLACK_CHANNEL');
     const FILE_PATH = core.getInput('FILE_PATH');
     const SLACK_MESSAGE = core.getInput('SLACK_MESSAGE');
-    const MESSAGE_HILIGHT = core.getInput('MESSAGE_HILIGHT');
-    const MESSAGE_CODE = core.getInput('MESSAGE_CODE');
+    const SEND_COMMIT_MESSAGE = core.getInput('SEND_COMMIT_MESSAGE');
 
     const web = new WebClient(SLACK_TOKEN);
 var slackMessage=SLACK_MESSAGE;
-if(MESSAGE_CODE){
-    slackMessage=`\`${slackMessage}\``;
+if(SEND_COMMIT_MESSAGE===true){
+    slackMessage=github.event.head_commit.message
 }
-if(MESSAGE_HILIGHT){
-    slackMessage=`>${slackMessage}`;
-}
-    if (SHARE_FILE) {
+    if (SHARE_FILE===true) {
         (async () => {
 
             // Post a message to the channel, and await the result.

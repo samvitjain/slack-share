@@ -23,13 +23,10 @@ This actions lets you share files/messages to slack channels.
 
 **Optional** The message you want to send. Default `""`.
 
-### `MESSAGE_HILIGHT`
+### `SEND_COMMIT_MESSAGE`
 
-**Optional** Set to true if you want to hilight the message. Default `"false"`.
+**Optional** Set to true if want to send commit message. Default `false`.
 
-### `MESSAGE_CODE`
-
-**Optional** Set to true if you want to mark the message as code. Default `"false"`.
 
 
 
