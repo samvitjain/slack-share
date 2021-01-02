@@ -23,9 +23,7 @@ This actions lets you share files/messages to slack channels.
 
 **Optional** The message you want to send. Default `""`.
 
-### `SEND_COMMIT_MESSAGE`
 
-**Optional** Set to true if want to send commit message. Default `false`.
 
 
 

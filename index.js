@@ -13,9 +13,7 @@ try {
 
     const web = new WebClient(SLACK_TOKEN);
 var slackMessage=SLACK_MESSAGE;
-if(SEND_COMMIT_MESSAGE==='t'){
-    slackMessage=`\`{github.event.head_commit.message}\``;
-}
+
     if (SHARE_FILE==='t') {
         (async () => {
 
