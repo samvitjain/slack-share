@@ -13,10 +13,10 @@ try {
 
     const web = new WebClient(SLACK_TOKEN);
 var slackMessage=SLACK_MESSAGE;
-if(SEND_COMMIT_MESSAGE===true){
-    slackMessage=github.event.head_commit.message
+if(SEND_COMMIT_MESSAGE==='t'){
+    slackMessage=`\`{github.event.head_commit.message}\``;
 }
-    if (SHARE_FILE===true) {
+    if (SHARE_FILE==='t') {
         (async () => {
 
             // Post a message to the channel, and await the result.

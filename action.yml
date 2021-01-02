@@ -8,7 +8,7 @@ inputs:
   SHARE_FILE:  # id of input
     description: 'Share file boolean'
     required: true
-    default: false
+    default: 'f'
   SLACK_CHANNEL:  # id of input
     description: 'Slack channel'
     required: true
@@ -24,7 +24,7 @@ inputs:
   SEND_COMMIT_MESSAGE:  # id of input
     description: 'Send commit message'
     required: false
-    default: false
+    default: 'f'
 runs:
   using: 'node12'
   main: 'index.js'
