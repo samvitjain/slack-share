@@ -9,7 +9,7 @@ This actions lets you share files/messages to slack channels.
 
 ### `SHARE_FILE`
 
-**Required** Set true if you want to share file. Default `"false"`.
+**Required** Set true if you want to share file. Default `"f"`.
 
 ### `SLACK_CHANNEL`
 
@@ -30,8 +30,8 @@ This actions lets you share files/messages to slack channels.
 
 ## Example usage
 
-uses: samvitjain/slack-share@v1.0
-with:
+#uses: samvitjain/slack-share@v1.0
+#with:
   SLACK_TOKEN: 'Your token'
   SHARE_FILE: true
   SLACK_CHANNEL: 'random'
